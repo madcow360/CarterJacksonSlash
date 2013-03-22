@@ -1,0 +1,90 @@
+
+
+\documentclass[twoside,titlepage]{article}
+
+
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{easylist}
+\usepackage{fancyhdr}
+\usepackage{enumerate}
+\usepackage{nameref}
+\usepackage{titling}
+\usepackage{diagmac2}
+\include{tikz}
+\usetikzlibrary{mindmap}
+\usepackage{subfigure}
+
+
+\pagestyle{fancyplain}
+\fancyhf{}
+\fancyhf[FLO,FRE]{\thepage}
+\fancyhead[RE,LO]{\thesection.\currentname.}
+
+\renewcommand{\abstractname}{}
+\renewcommand{\thesection}{\thepart \Alph{section}}
+\renewcommand{\theenumi}{\thesection\arabic{enumi}}
+\renewcommand{\theenumii}{\theenumi.\arabic{enumii}}
+
+\makeatletter
+\newcommand*{\currentname}{\@currentlabelname}
+\makeatother
+
+
+\begin{document}
+
+ 
+
+\include{titlepage}
+
+
+
+
+
+
+
+ 
+ \tableofcontents
+
+ \include{SectionA}
+
+ \newpage
+ \include{SectionB}
+ \cleardoublepage
+ \include{SectionC}
+ \cleardoublepage
+ \include{SectionD}
+ \cleardoublepage
+ \include{SectionE}
+ \cleardoublepage
+ \include{SectionF}
+ 
+
+  
+
+ 
+
+
+ 
+
+
+
+ 
+
+ \textbf{\textit{ Signed  }}
+
+ \textbf{X\_\_Samuel\_Carter\_\_\_\_\_\_  }
+
+ \textbf{X\_\_Danielle\_Jackson\_\_\_  }
+
+ 
+
+ 
+
+
+\end{document}
+
+
+

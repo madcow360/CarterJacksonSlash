@@ -1,0 +1,42 @@
+\begin{figure}[!hbt]
+\subfigure[Attempt at drawing Unit Circle]{
+\begin{tikzpicture}
+%origin lines
+\draw (-1.5,0) -- (1.5,0);
+\draw (0,-1.5) -- (0,1.5);
+%grid
+\draw[step=.5cm,gray,very thin] (-1.4,-1.4) grid (1.4,1.4);
+\draw (5mm,0mm)  arc (0:45:5mm);
+
+\draw (0,0) -- (0.72,1/sqrt(2),1/sqrt(2));
+
+\draw (0,0) circle (10mm)
+\end{tikzpicture}
+}
+\caption{tiks Pictures}
+
+
+\subfigure[Tree Diagram]{
+\begin{tikzpicture}
+[edge from parent fork down,
+every node/.style={fill=red!30,rounded corners},
+edge from parent/.style={red,-o,thick,draw}]
+\node {Parent}
+	child {node{left}}
+	child {node{right}
+		child {node{child}}
+		child {node{nate}}
+};
+\end{tikzpicture}
+}
+\end{figure}
+
+
+\begin{tikzpicture}
+\path[mindmap,concept color=black,text=white]
+\node[concept] {Root concept}
+[clockwise from=0]
+child[concept color = green]{ {node[concept] {Child concept}}
+child[concept color = blue]{node[concept] {Blue Concept}}
+};
+\end{tikzpicture}
